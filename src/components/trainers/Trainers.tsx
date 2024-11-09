@@ -1,6 +1,13 @@
-// import React from "react";
+import React from "react";
 // import TrainerCard from "./TrainerCard";
-// import "../../styles/trainers/Trainers.css"
+import "../../styles/trainers/Trainers.css"
+export default function(){
+  return(
+    <div>
+      hello
+    </div>
+  )
+}
 // const Trainers = () => {
 //   const trainersInfo = [
 //     {
