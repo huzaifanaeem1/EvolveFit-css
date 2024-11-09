@@ -7,9 +7,9 @@ import Services from "./services/Services";
 import Testimonials from "./testimonials/Testimonials";
 import SectionTitle from "./SectionTitle";
 import Button from "./Button";
-import About from "./about/About";
-import Trainers from "./trainers/Trainers";
-import Pricing from "./pricing/Pricing";
+// import About from "./about/About";
+// import Trainers from "./trainers/Trainers";
+// import Pricing from "./pricing/Pricing";
 
 export {
   Navbar,
@@ -21,7 +21,7 @@ export {
   Footer,
   SectionTitle,
   Button,
-  About,
-  Trainers,
-  Pricing,
+  // About,
+  // Trainers,
+  // Pricing,
 };
