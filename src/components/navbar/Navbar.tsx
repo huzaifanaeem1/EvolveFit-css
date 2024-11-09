@@ -11,21 +11,21 @@ const navItems = [
     name: "Home",
     slug: "/",
   },
-  {
-    id: 2,
-    name: "About us",
-    slug: "/about",
-  },
-  {
-    id: 3,
-    name: "Pricing",
-    slug: "/pricing",
-  },
-  {
-    id: 4,
-    name: "Trainers",
-    slug: "/trainers",
-  },
+  // {
+  //   id: 2,
+  //   name: "About us",
+  //   slug: "/about",
+  // },
+  // {
+  //   id: 3,
+  //   name: "Pricing",
+  //   slug: "/pricing",
+  // },
+  // {
+  //   id: 4,
+  //   name: "Trainers",
+  //   slug: "/trainers",
+  // },
 ];
 
 const Navbar = () => {
