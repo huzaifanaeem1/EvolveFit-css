@@ -1,0 +1,26 @@
+/* General button styling */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border: 0;
+    outline: none;
+    background-color: #3498db; /* Primary color */
+    border-radius: 0.5rem; /* Rounded corners */
+    font-size: 1rem;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  /* Hover effect */
+  .btn:hover {
+    background-color: #2980b9; /* Darker shade for hover effect */
+  }
+  
+  /* If additional custom classes are added */
+  .btn:focus {
+    outline: none;
+  }
+  

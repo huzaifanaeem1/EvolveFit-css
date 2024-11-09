@@ -1,0 +1,57 @@
+/* Navbar Container */
+.navbar {
+  background-color: black;
+  color: white;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 1.25rem; /* p-5 */
+  align-items: center;
+  justify-content: space-between;
+  font-family: inherit;
+}
+
+/* Logo Link */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.875rem; /* text-3xl */
+  text-decoration: none;
+}
+
+.navbar-logo-icon {
+  color: #C64FEC; /* primary color */
+  font-size: 1.875rem;
+  margin-right: 0.5rem;
+}
+
+.navbar-logo-text {
+  color: white;
+}
+
+/* Navigation Links */
+.navbar-nav {
+  display: flex;
+  gap: 2rem; /* lg:gap-8 */
+  margin-top: 1.25rem; /* md:mt-0 */
+}
+
+/* Button */
+.navbar-button {
+  background-color: black;
+  color: white;
+  padding: 0.25rem 0.5rem; /* py-[2px] */
+  border: 2px solid transparent;
+  box-shadow: 0 0 10px #C64FEC; /* shadow-primary */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-button:hover {
+  background-color: #C254DE; /* secondary color */
+}

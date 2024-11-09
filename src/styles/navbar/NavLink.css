@@ -1,0 +1,14 @@
+.navlink {
+  font-size: 1.125rem; 
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  padding: 0.25rem 0.75rem; 
+  border-radius: 8px;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.navlink:hover {
+  color: #C64FEC;
+  text-decoration: underline;
+}

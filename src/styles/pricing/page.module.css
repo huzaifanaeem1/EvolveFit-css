@@ -1,0 +1,32 @@
+.pricingSection {
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: #000;
+    color: white;
+  }
+  
+  .pricingContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .pricingCard {
+    background-color: #1a1a1a;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    width: 250px;
+    text-align: center;
+  }
+  
+  .pricingCard h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .pricingCard p {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+  }
+  

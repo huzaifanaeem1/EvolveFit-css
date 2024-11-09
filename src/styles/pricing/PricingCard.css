@@ -1,0 +1,101 @@
+/* PricingCard.module.css */
+
+/* Container for the card */
+.card-container {
+    padding: 1rem;
+    width: 100%;
+    max-width: 25%;
+    box-sizing: border-box;
+  }
+  
+  /* Main card box */
+  .card {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 2px solid #c64fec; /* Primary color */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+    transform: scale(1);
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-header {
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-title {
+    font-size: 3.125rem; /* text-5xl */
+    color: #c64fec; /* Primary color */
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 0.25rem;
+  }
+  
+  .card-price {
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 400;
+    color: #fff;
+  }
+  
+  .card-features {
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature-check {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    background-color: #c64fec; /* Primary color */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .feature-check svg {
+    width: 0.75rem;
+    height: 0.75rem;
+    color: #fff;
+  }
+  
+  .join-button {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    background-color: #c64fec; /* Primary color */
+    color: #fff;
+    border: 0;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .join-button:hover {
+    background-color: #c254de; /* Secondary color */
+  }
+  
+  .join-button:focus {
+    outline: none;
+  }
+  

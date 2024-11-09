@@ -1,0 +1,66 @@
+.trainer-card {
+    padding: 1rem;
+    width: 50%;
+  }
+  
+  .trainer-card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .trainer-card__content.sm\:flex-row {
+    flex-direction: row;
+  }
+  
+  .trainer-card__image {
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 1rem;
+  }
+  
+  .trainer-card__details {
+    flex-grow: 1;
+    padding-left: 2rem;
+  }
+  
+  .trainer-card__name {
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+  
+  .trainer-card__description {
+    margin-bottom: 1rem;
+  }
+  
+  .trainer-card__social {
+    display: inline-flex;
+  }
+  
+  .trainer-card__social-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: transform 0.4s ease, color 0.4s ease;
+  }
+  
+  .trainer-card__social-icon:hover {
+    color: var(--secondary-color);
+    transform: scale(1.1);
+  }
+  
+  /* Media Queries for responsive layout */
+  @media (min-width: 768px) {
+    .trainer-card {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .trainer-card {
+      width: 100%;
+    }
+  }
+  

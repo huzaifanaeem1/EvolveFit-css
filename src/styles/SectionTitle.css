@@ -1,0 +1,26 @@
+/* SectionTitle.css */
+.section-title {
+    font-size: 3rem; /* text-5xl equivalent */
+    font-weight: 900; /* font-black */
+    text-align: center;
+    color: white;
+    padding-top: 1rem; /* pt-4 */
+  }
+  
+  .section-title .highlight {
+    color: var(--primary-color); /* text-primary */
+    text-decoration: underline;
+  }
+  
+  @media (min-width: 640px) {
+    .section-title {
+      font-size: 4rem; /* sm:text-6xl equivalent */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .section-title {
+      font-size: 5rem; /* lg:text-7xl equivalent */
+    }
+  }
+  

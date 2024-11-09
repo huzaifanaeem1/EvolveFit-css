@@ -1,0 +1,66 @@
+.mob-navbar {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 1.25rem;
+  font-family: inherit;
+}
+
+
+.mob-navbar-logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.mob-navbar-logo-icon {
+  color: #C64FEC; 
+  font-size: 1.875rem;
+  margin-right: 0.5rem;
+}
+
+
+.mob-navbar-toggle {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+
+.mob-navbar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  position: absolute;
+  top: 4rem;
+  right: 1rem;
+  width: 12rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.mob-navbar-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: color 0.3s ease;
+}
+
+.mob-navbar-link:hover {
+  color: #C64FEC;
+}

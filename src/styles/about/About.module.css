@@ -1,0 +1,27 @@
+/* Container Section */
+.section {
+  background-color: black;
+  color: white;
+  padding-top: 8rem; /* Adds spacing at the top */
+  padding-bottom: 8rem; /* Adds spacing at the bottom */
+  width: 100%;
+  margin-top: 8rem; /* Adds margin on top */
+}
+
+/* Section Title */
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Paragraph Styling */
+.sectionParagraph {
+  width: 66.67%; /* Equivalent to lg:w-2/3 */
+  margin: 0 auto;
+  font-size: 1rem; /* Equivalent to text-base */
+  line-height: 1.75; /* Equivalent to leading-relaxed */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
