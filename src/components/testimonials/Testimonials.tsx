@@ -1,7 +1,8 @@
 import React from "react";
 import TestimonialCard from "./TestimonialCard";
-import { SectionTitle } from "../";
+import { SectionTitle } from "@/components";
 import "../../styles/testimonials/Testimonials.css"
+
 const Testimonials = () => {
   const testimonials = [
     {
@@ -28,19 +29,15 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="testimonials-container">
-      <div className="container mx-auto px-5 py-24">
+    <section className="testimonials-section">
+      <div className="testimonials-container">
         <SectionTitle first="Our" second="Testimonials" />
         <p className="testimonials-description">
-          See how EvolveFit has helped transform the lives of our clients.
-          Their stories of dedication, progress, and success speak to the impact of
-          our programs and the strength of our community.
+          See how EvolveFit has helped transform the lives of our clients. Their stories of dedication, progress, and success speak to the impact of our programs and the strength of our community.
         </p>
-        <div className="testimonials-wrapper">
+        <div className="testimonials-cards">
           {testimonials.map((testimonial) => (
-            <div className="testimonial-card" key={testimonial.id}>
-              <TestimonialCard testimonial={testimonial} />
-            </div>
+            <TestimonialCard testimonial={testimonial} key={testimonial.id} />
           ))}
         </div>
       </div>

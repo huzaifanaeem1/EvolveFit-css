@@ -1,15 +1,13 @@
 import React from "react";
-// import ".styles/pricing/page.module.css" // Import the CSS module
+import { Pricing } from "@/components";
+import "../../styles/pricing/Pricing.page.css"
 
-const PricingCard = () => {
+const page = () => {
   return (
-    <div>
-      hello
-      {/* <h3 className={styles.cardTitle}>Basic Plan</h3>
-      <p className={styles.cardPrice}>$20/month</p>
-      <a href="#" className={styles.cardButton}>Subscribe Now</a> */}
-    </div>
+    <section className="page-section">
+      <Pricing />
+    </section>
   );
 };
 
-export default PricingCard;
+export default page;

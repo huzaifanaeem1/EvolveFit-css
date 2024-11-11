@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Heebo } from "next/font/google";
-import { Navbar, MobNavbar, Footer } from "@/components";
+import { Navbar, MobNavbar, Footer } from "@/components"
 
 const font = Heebo({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],

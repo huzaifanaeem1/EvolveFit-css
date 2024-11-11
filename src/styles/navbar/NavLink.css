@@ -1,14 +1,15 @@
-.navlink {
+.nav-link {
   font-size: 1.125rem; 
-  font-weight: 500;
-  color: white;
-  text-decoration: none;
+  font-weight: 500; 
+  border-radius: 0.5rem; 
   padding: 0.25rem 0.75rem; 
-  border-radius: 8px;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
+  transition-duration: 300ms; 
 }
 
-.navlink:hover {
-  color: #C64FEC;
+.nav-link:hover {
+  outline: none;
+  box-shadow: 0 0 0 2px var(#c64fec);
+  text-decoration: underline;
+  color: #c64fec;
   text-decoration: underline;
 }

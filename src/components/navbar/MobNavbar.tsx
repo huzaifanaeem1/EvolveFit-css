@@ -5,12 +5,11 @@ import React, { useState } from "react";
 import NavLink from "./NavLink";
 import { MdFitnessCenter } from "react-icons/md";
 import "../../styles/navbar/MobNavbar.css"
-
 const navItems = [
   { id: 1, name: "Home", slug: "/" },
-  // { id: 2, name: "About us", slug: "/about" },
-  // { id: 3, name: "Pricing", slug: "/pricing" },
-  // { id: 4, name: "Trainers", slug: "/trainers" },
+  { id: 2, name: "About us", slug: "/about" },
+  { id: 3, name: "Pricing", slug: "/pricing" },
+  { id: 4, name: "Trainers", slug: "/trainers" },
 ];
 
 const MobNavbar = () => {
@@ -22,8 +21,8 @@ const MobNavbar = () => {
         <div>
           <Link href="/" className="logo">
             <MdFitnessCenter className="logo-icon" />
-            <span className="text-white">Evolve </span>
-            <span className="text-primary"> Fit</span>
+            <span className="logo-text-white">Evolve </span>
+            <span className="logo-text-primary"> Fit</span>
           </Link>
         </div>
 
@@ -45,7 +44,7 @@ const MobNavbar = () => {
         </button>
       </div>
 
-      <nav className={`mobile-menu ${isOpen ? "show" : ""}`}>
+      <nav className={`nav-menu ${isOpen ? "open" : ""}`}>
         {navItems.map((item) => (
           <NavLink slug={item.slug} key={item.id} name={item.name} />
         ))}

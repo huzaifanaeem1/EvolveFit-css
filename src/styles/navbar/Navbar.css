@@ -1,57 +1,117 @@
-/* Navbar Container */
+
 .navbar {
-  background-color: black;
-  color: white;
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  padding: 1.25rem; /* p-5 */
-  align-items: center;
-  justify-content: space-between;
-  font-family: inherit;
+  color: #ffffff; 
+  font-family: 'YourFontFamily', sans-serif; 
+  background-color: #000000; 
+  display: none; 
+  position: fixed; 
+  width: 100%; 
+  top: 0; 
+  left: 0; 
+  z-index: 10; 
 }
 
-/* Logo Link */
-.navbar-logo {
-  display: flex;
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; 
+  display: flex; 
+  flex-wrap: wrap;
+  padding: 1.25rem; 
   align-items: center;
-  font-weight: bold;
-  font-size: 1.875rem; /* text-3xl */
-  text-decoration: none;
 }
 
-.navbar-logo-icon {
-  color: #C64FEC; /* primary color */
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: black; /* Equivalent to font-black */
+  font-size: 1.5rem;
+  color: #C64FEC;
+}
+
+.logo-link {
+  display: flex; 
+  align-items: center; 
+  gap: 0.5rem; 
+  font-weight: 900; 
+  font-size: 1.875rem; 
+  margin-left: 0;
+}
+
+.icon {
+  font-size: 5rem; 
+  color: #C64FEC ; 
+  margin-right: 0.25rem;
+}
+
+.logo-text {
   font-size: 1.875rem;
-  margin-right: 0.5rem;
-}
-
-.navbar-logo-text {
   color: white;
 }
 
-/* Navigation Links */
-.navbar-nav {
-  display: flex;
-  gap: 2rem; /* lg:gap-8 */
-  margin-top: 1.25rem; /* md:mt-0 */
+
+.nav  {
+  display: flex; 
+  align-items: center;
+  gap: 0.5rem; 
+  margin-top: 1.25rem;
+  font-size: 1rem; 
+  justify-content: center; 
 }
 
-/* Button */
-.navbar-button {
-  background-color: black;
+.nav-link:hover  {
   color: white;
-  padding: 0.25rem 0.5rem; /* py-[2px] */
-  border: 2px solid transparent;
-  box-shadow: 0 0 10px #C64FEC; /* shadow-primary */
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-.navbar-button:hover {
-  background-color: #C254DE; /* secondary color */
+.nav-link:hover  {
+  color: #C254DE; 
+}
+
+
+.join-btn {
+  margin-left: 1rem;
+}
+
+.button {
+  padding-top: 2px;
+  padding-bottom: 2px; 
+  margin-left: 2rem; 
+  background-color: #000; 
+  border-style: none; 
+  box-shadow: 0px 2px 6px rgba(198, 79, 236, 1); 
+  border: 2px solid #C64FEC;
+}
+
+.button:hover {
+  box-shadow: 0px 2px 6px rgba(198, 79, 236, 1);
+}
+
+@media (min-width: 768px) { 
+  .navbar {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo-link {
+    margin-left: 1.25rem; 
+  }
+}
+
+@media (min-width: 768px) { 
+  .nav {
+    margin-left: auto; 
+    margin-top: 0; 
+  }
+}
+
+@media (min-width: 1024px) { 
+  .nav {
+    gap: 2rem; 
+  }
 }

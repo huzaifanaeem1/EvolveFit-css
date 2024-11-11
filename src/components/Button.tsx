@@ -2,7 +2,6 @@ import React, { ReactNode } from "react";
 import "../styles/Button.css"
 
 type btn = "button" | "submit" | "reset";
-
 const Button = ({
   children,
   className,
@@ -15,7 +14,7 @@ const Button = ({
   return (
     <button
       type={type}
-      className={`btn ${className}`}
+      className={`button ${className}`}
     >
       {children}
     </button>

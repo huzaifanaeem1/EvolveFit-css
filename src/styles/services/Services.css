@@ -1,74 +1,60 @@
 /* Services.css */
 .services-section {
-    background-color: #1f2937; /* bg-stone-950 equivalent */
-    color: white;
-    font-family: sans-serif; /* Adjust based on your project */
-    padding-top: 6rem; /* py-24 */
-    padding-bottom: 6rem; /* py-24 */
+  background-color: #1c1c1c; /* Equivalent to bg-stone-950 */
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 6rem 0;
+}
+
+.services-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 7rem;
+}
+
+/* Responsive styles */
+
+/* For small screens (mobile) */
+@media (max-width: 768px) {
+  .services-section {
+    padding: 4rem 0; /* Reduce padding on smaller screens */
   }
-  
+
+  .services-grid {
+    gap: 1rem; /* Reduce the gap between items */
+    margin-top: 4rem; /* Adjust margin on smaller screens */
+  }
+}
+
+/* For medium screens (tablet) */
+@media (max-width: 1024px) {
   .services-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem; /* gap-6 */
-    justify-content: center; /* justify-center */
-    margin-top: 7rem; /* mt-28 */
-    margin-bottom: 2.5rem; /* mb-10 */
+    width: 85%; /* Adjust container width for tablet */
   }
-  
-  .service-card {
-    background-color: #1f2937; /* bg-stone-950 equivalent */
-    color: white;
-    text-align: center;
-    width: 100%; /* w-full */
-    max-width: 20rem; /* xl:w-1/4 */
-    padding: 1.5rem; /* p-6 */
-    border-radius: 0.375rem; /* rounded-lg */
-    border: 2px solid #4b5563; /* border-primary equivalent */
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  .services-grid {
+    gap: 1.25rem; /* Slightly reduce gap */
+    margin-top: 5rem; /* Adjust margin for medium screens */
   }
-  
-  .service-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* For large screens (desktop) */
+@media (min-width: 1025px) {
+  .services-container {
+    width: 90%; /* Default container width for desktop */
   }
-  
-  .service-title {
-    font-size: 1.125rem; /* text-sm */
-    letter-spacing: 0.1em; /* tracking-widest */
-    margin-bottom: 0.25rem; /* mb-1 */
-    font-weight: 500; /* font-medium */
+
+  .services-grid {
+    gap: 1.5rem; /* Standard gap between items */
+    margin-top: 7rem; /* Default margin for larger screens */
   }
-  
-  .service-image {
-    width: 100%;
-    height: auto;
-    border-radius: 0.375rem;
-    margin-bottom: 1.25rem; /* mb-4 */
-  }
-  
-  .service-name {
-    font-size: 1.25rem; /* text-xl */
-    font-weight: 600; /* font-semibold */
-  }
-  
-  .service-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #3b82f6; /* bg-primary equivalent */
-    color: white;
-    padding: 0.5rem 1.25rem; /* py-2 px-4 */
-    width: 100%;
-    border: 0;
-    border-radius: 0.375rem; /* rounded */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .service-button:hover {
-    background-color: #9333ea; /* bg-secondary equivalent */
-  }
-  
+}

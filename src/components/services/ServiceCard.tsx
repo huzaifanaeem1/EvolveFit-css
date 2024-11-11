@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import "../../styles/services/ServiceCard.css"
+
 const ServiceCard = ({
   name,
   image,
@@ -12,7 +13,7 @@ const ServiceCard = ({
 }) => {
   return (
     <div className="service-card">
-      <div className="image-container">
+      <div className="service-card-image-wrapper">
         <Image
           src={image}
           alt={imageAlt}

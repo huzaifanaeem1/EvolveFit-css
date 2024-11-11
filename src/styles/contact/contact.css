@@ -1,100 +1,150 @@
-/* Contact.css */
 .contact-section {
-    background-color: #1e1e1e; /* bg-stone-950 */
-    color: white;
-    padding-top: 6rem; /* Equivalent to py-24 */
+  color: #ffffff; 
+  background-color: #1c1917; 
+  font-family: 'YourFontFamily', sans-serif; 
+  position: relative; 
+}
+
+.contact-container {
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  padding-left: 1.25rem; 
+  padding-right: 1.25rem; 
+  padding-top: 6rem;
+  padding-bottom: 6rem; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column; 
+  text-align: center; 
+  width: 100%; 
+  margin-bottom: 3rem; 
+
+}
+
+.contact-description {
+  width: 100%; 
+  margin-top: 0.5rem;
+  margin-left: auto; 
+  margin-right: auto; 
+  line-height: 1.625; 
+  font-size: 1rem; 
+  padding-top: 2rem; 
+}
+
+.contact-form-wrapper {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  flex-wrap: wrap; 
+  margin: -0.5rem; 
+}
+
+.form-group {
+  position: relative;
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.label {
+  line-height: 1.75rem; 
+  font-size: 1rem; 
+  color: #ffffff;
+}
+
+.input-field,
+.textarea-field {
+  width: 100%; 
+  background-color: black ;/* bg-black -opacity-40 corresponds to background-color: rgba(0, 0, 0, 0.4) */
+  border-radius: 0.375rem; /* rounded corresponds to border-radius: 0.375rem */
+  border: 1px solid #C254DE; /* border corresponds to border: 1px solid #C254DE (secondary color) */
+  color: #D1D5DB; /* text-gray-100 corresponds to color: #D1D5DB (light gray text) */
+  padding: 0.25rem 0.75rem; /* py-1 px-3 corresponds to padding: 0.25rem 0.75rem */
+  line-height: 2rem;
+  font-size: 1rem; 
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.input-field:focus,
+.textarea-field:focus {
+  border-color: #C64FEC; 
+  background-color: black; /* focus:bg-black corresponds to background-color: rgba(0, 0, 0, 0.4) */
+  border: 3px solid #C254DE; /* focus:ring-2 focus:ring-secondary corresponds to ring: 2px solid #C254DE (secondary color) */
+  border-color: #C254DE; /* Primary focus color */
+  background-color: #000;
+}
+
+.textarea-field {
+  width: 100%; 
+  background-color: black;
+  border-radius: 0.375rem; 
+  border: 1px solid #C254DE; 
+  height: 8rem; 
+  font-size: 1rem; 
+  color: white; 
+  padding: 0.25rem 0.75rem;
+  resize: none; 
+  line-height: 1.5rem; 
+  transition: all 0.2s ease-in-out;
+  outline: none; 
+
+}
+
+.submit-button-wrapper {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.submit-button {
+  display: flex; 
+  margin-left: auto; 
+  margin-right: auto; 
+  color: white; 
+  background-color: black; 
+  border: none; 
+  padding: 0.5rem 2rem;
+  border-radius: 0.375rem; 
+  font-size: 1.125rem; 
+  font-weight: 600; 
+  transition: all 0.3s ease; 
+  box-shadow: -0px 2px 6px rgba(198, 79, 236, 1);
+  border: 2px solid #C64FEC; 
+}
+
+ 
+.submit-button:hover {
+  color: black; 
+  background-color: #C64FEC; 
+  box-shadow: 0px 2px 6px rgba(198, 79, 236, 1);
+}
+
+
+@media (min-width: 1024px) { /* lg: breakpoint */
+  .contact-descriptiont {
+    width: 66.67%; /* Corresponds to lg:w-2/3 */
   }
-  
-  .contact-title {
-    font-size: 3rem; /* text-5xl equivalent */
-    font-weight: 900; /* font-black */
-    text-align: center;
-    color: white;
-    padding-top: 1rem; /* pt-4 */
+}
+
+@media (min-width: 768px) { /* md: applies styles for screens with min-width of 768px */
+  .contact-form-wrapper {
+    width: 66.6667%; /* md:w-2/3 corresponds to width: 66.6667% */
   }
-  
-  .contact-title .highlight {
-    color: var(--primary-color); /* text-primary */
-    text-decoration: underline;
+}
+
+@media (min-width: 1024px) { /* lg: applies styles for screens with min-width of 1024px */
+  .contact-form-wrapper {
+    width: 50%; /* lg:w-1/2 corresponds to width: 50% */
   }
-  
-  .contact-description {
-    max-width: 66.67%; /* lg:w-2/3 */
-    margin: 0 auto;
-    margin-top: 2rem;
-    text-align: center;
-    font-size: 1rem; /* text-base */
-  }
-  
-  .contact-form {
-    max-width: 50%; /* lg:w-1/2 */
-    margin: 0 auto;
-  }
-  
-  .contact-form .input-field {
-    padding: 0.5rem;
-    width: 100%;
-    background-color: #000000;
-    opacity: 0.4;
-    border-radius: 0.375rem;
-    border: 1px solid var(--secondary-color);
-    color: #e5e5e5;
-    font-size: 1rem;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
-  
-  .contact-form .input-field:focus {
-    border-color: var(--primary-color);
-    background-color: #000000;
-    box-shadow: 0 0 0 2px var(--secondary-color);
-  }
-  
-  .contact-form button {
-    background-color: #000000;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.375rem;
-    font-weight: 600; /* font-semibold */
-    font-size: 1.125rem; /* text-lg */
-    border: none;
-    margin: 1rem 0;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .contact-form button:hover {
-    background-color: var(--primary-color);
-    color: black;
-  }
-  
-  .contact-form textarea {
-    width: 100%;
-    background-color: #000000;
-    opacity: 0.4;
-    border-radius: 0.375rem;
-    border: 1px solid var(--secondary-color);
-    color: #e5e5e5;
-    font-size: 1rem;
-    padding: 0.75rem;
-    resize: none;
-  }
-  
-  .contact-form textarea:focus {
-    border-color: var(--primary-color);
-    background-color: #000000;
-    box-shadow: 0 0 0 2px var(--secondary-color);
-  }
-  
-  @media (min-width: 640px) {
-    .contact-title {
-      font-size: 4rem; /* sm:text-6xl equivalent */
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .contact-title {
-      font-size: 5rem; /* lg:text-7xl equivalent */
-    }
-  }
-  
+}

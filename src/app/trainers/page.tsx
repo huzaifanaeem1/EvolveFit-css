@@ -1,28 +1,28 @@
 import React from "react";
-// import { SectionTitle, Trainers } from "@/components";
-import "../../styles/trainers/page.module.css"
+import { SectionTitle, Trainers } from "@/components";
+import "../../styles/trainers/Trainer.page.css"
 
-const Page = () => {
+const page = () => {
   return (
     <div>
-        hello
-      {/* <section className={styles.pageSection}> 
-        <div className={styles.titleContainer}> 
-          <div className="w-full">
+      <section className="trainers-section">
+        <div className="section-content">
+          <div className="title-container">
             <SectionTitle first="Our" second="Trainers" />
-            <p className={styles.sectionDescription}> 
+            <p className="description-text">
               Our certified trainers are dedicated to guiding you every step of the way.
               With personalized fitness plans and expert advice, we ensure you reach your goals
               efficiently and safely.
             </p>
           </div>
-          <div className={styles.trainerContainer}>
+          <div className="trainers-container">
             <Trainers />
           </div>
         </div>
-      </section> */}
+      </section>
     </div>
   );
 };
 
-export default Page;
+export default page;
+

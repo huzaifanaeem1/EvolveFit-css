@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { RiStarSFill } from "react-icons/ri";
-import "../../styles/testimonials/TestimonialCard.css"
+import "../../styles/testimonials/TestimonialCard.css"; // Import the CSS file
+
 type Testimonial = {
   name: string;
   desc: string;
@@ -10,26 +11,25 @@ type Testimonial = {
 
 const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
   const { name, imgSrc, desc } = testimonial;
-
   return (
     <div className="testimonial-card">
-      <div className="h-full text-center">
+      <div className="testimonial-content">
         <Image
           alt="profile"
-          className="inline-block"
+          className="testimonial-image"
           src={imgSrc}
           width={80}
           height={80}
         />
-        <p className="leading-relaxed">{desc}</p>
-        <div className="stars">
-          <RiStarSFill className="inline-block" />
-          <RiStarSFill className="inline-block" />
-          <RiStarSFill className="inline-block" />
-          <RiStarSFill className="inline-block" />
-          <RiStarSFill className="inline-block" />
+        <p className="testimonial-description">{desc}</p>
+        <div className="testimonial-stars">
+          <RiStarSFill className="star-icon" />
+          <RiStarSFill className="star-icon" />
+          <RiStarSFill className="star-icon" />
+          <RiStarSFill className="star-icon" />
+          <RiStarSFill className="star-icon" />
         </div>
-        <h2>{name}</h2>
+        <h2 className="testimonial-name">{name}</h2>
       </div>
     </div>
   );

@@ -1,77 +1,85 @@
-
+/* Hero section background styling */
 .hero-section {
-    background-size: cover; 
-    background-position: center;
-    height: 100vh; 
-    color: white;
-    padding-top: 1.5rem; 
-    font-family: inherit;
-    background-image: url('/images/boy.jpg');
-  }
-  
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #fff;
+  padding-top: 24px;
+  font-family: Arial, sans-serif;
+}
 
+/* Hero container styling */
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding: 20px;
+  padding-top: 96px;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
   .hero-container {
-    max-width: 1200px; 
-    margin: 0 auto;
-    display: flex;
-    padding: 0 1.25rem; 
-    padding-top: 6rem; 
-    padding-bottom: 6rem;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
   }
-  
-  
+}
+
+/* Hero content styling */
+.hero-content {
+  flex-grow: 1;
+  max-width: 50%;
+  margin-top: 80px;
+  padding-left: 16px;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
   .hero-content {
-    flex-grow: 1;
-    width: 50%; 
-    margin-top: 5rem; 
-    padding-left: 1rem; 
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    margin-top: 112px;
+    text-align: left;
   }
-  
-  
+}
+
+/* Title styling */
+.hero-title {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+@media (min-width: 640px) {
   .hero-title {
-    font-size: 3.75rem; 
-    font-weight: bold;
-    margin-bottom: 1rem;
-    line-height: 1.1;
+    font-size: 64px;
   }
-  
- 
-  .highlight {
-    color: #C64FEC; 
-  }
-  
+}
 
-  .hero-description {
-    font-weight: 500; 
-    margin-top: 1rem;
-    line-height: 1.6;
-  }
-  
+.hero-highlight {
+  color: #c64fec; /* Replace with your secondary color */
+}
 
-  .button-link {
-    margin-left: 1rem;
-  }
-  
+/* Description styling */
+.hero-description {
+  font-weight: 500;
+  margin-top: 16px;
+  line-height: 1.6;
+}
 
-  .join-button {
-    margin-top: 1rem;
-    background-color: #C64FEC; 
-    padding: 0.5rem 1rem;
-    border: none;
-    color: white;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .join-button:hover {
-    background-color: #C254DE; 
-  }
-  
+/* Button styling */
+.hero-button-link {
+  margin-left: 16px;
+}
+
+.hero-button {
+  margin-top: 16px;
+  background-color: #c64fec; /* Primary color */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #ff4e64; /* Secondary color */
+}

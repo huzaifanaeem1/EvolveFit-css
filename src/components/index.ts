@@ -1,15 +1,17 @@
-import Navbar from "./navbar/Navbar";
-import MobNavbar from "./navbar/MobNavbar";
-import Contact from "./contact/Contact";
-import Footer from "./footer/Footer";
-import HeroSection from "./hero-section/HeroSection";
-import Services from "./services/Services";
-import Testimonials from "./testimonials/Testimonials";
-import SectionTitle from "./SectionTitle";
-import Button from "./Button";
-// import About from "./about/About";
-// import Trainers from "./trainers/Trainers";
-// import Pricing from "./pricing/Pricing";
+import Navbar from "../components/navbar/Navbar";
+import MobNavbar from "../components/navbar/MobNavbar";
+import Contact from "../components/contact/Contact";
+import Footer from "../components/footer/Footer";
+import HeroSection from "../components/hero-section/HeroSection";
+import Services from "../components/services/Services";
+import Testimonials from "../components/testimonials/Testimonials";
+import SectionTitle from "../components/SectionTitle";
+import Button from "../components/Button";
+import About from "../components/about/About";
+import Pricing from "../components/pricing/Pricing";
+import Trainers from "../components/trainers/Trainers";
+
+
 
 export {
   Navbar,
@@ -21,7 +23,7 @@ export {
   Footer,
   SectionTitle,
   Button,
-  // About,
-  // Trainers,
-  // Pricing,
+  About,
+  Pricing,
+  Trainers,
 };
