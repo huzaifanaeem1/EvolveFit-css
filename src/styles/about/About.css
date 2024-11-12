@@ -33,7 +33,7 @@
   border-radius: 8px; 
   box-shadow: 0px 2px 6px rgba(198, 79, 236, 1);
   border: 2px solid #C64FEC;
-  transition: transform 0.3s; /
+  transition: transform 0.3s; 
 }
 
 .about-title {
