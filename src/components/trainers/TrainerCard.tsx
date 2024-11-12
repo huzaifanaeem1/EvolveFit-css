@@ -23,20 +23,20 @@ const TrainerCard = ({ trainer }: { trainer: Trainer }) => {
           className="trainer-image"
           src={profile}
           width={200}
-          height={200}
+          height={150}
         />
         <div className="trainer-text">
           <h2 className="trainer-name">{name}</h2>
           <p className="trainer-description">{desc}</p>
           <span className="social-icons">
             <a>
-              <FaFacebook className="social-icon" />
+              <FaFacebook className="social-icon1" />
             </a>
             <a>
-              <FaSquareXTwitter className="social-icon" />
+              <FaSquareXTwitter className="social-icon2" />
             </a>
             <a>
-              <FaInstagramSquare className="social-icon" />
+              <FaInstagramSquare className="social-icon3" />
             </a>
           </span>
         </div>

@@ -16,8 +16,8 @@ const Navbar = () => {
     <header className="navbar">
       <div className="container">
         <div className="logo">
-        <MdFitnessCenter className="icon" />
-          <Link href="/" className="logo-link">
+         <Link href="/" className="logo-link">
+          <MdFitnessCenter className="gym-logo" />
             <span className="logo-text">Evolve</span> Fit
           </Link>
         </div>
@@ -34,7 +34,7 @@ const Navbar = () => {
           rel="noopener noreferrer"
           className="join-btn"
         >
-          <Button type="button" className="button">
+          <Button type="submit" className="button-link">
             Join us
           </Button>
         </a>

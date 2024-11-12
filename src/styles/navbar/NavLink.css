@@ -1,4 +1,4 @@
-.nav-link {
+.navlink {
   font-size: 1.125rem; 
   font-weight: 500; 
   border-radius: 0.5rem; 
@@ -6,7 +6,7 @@
   transition-duration: 300ms; 
 }
 
-.nav-link:hover {
+.navlink:hover {
   outline: none;
   box-shadow: 0 0 0 2px var(#c64fec);
   text-decoration: underline;

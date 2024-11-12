@@ -15,7 +15,7 @@ const Contact = () => {
           </div>
           <div className="contact-form-wrapper">
             <div className="form-row">
-              <div className="form-group">
+              <div className="form-group"> 
                 <label htmlFor="name" className="label">Name</label>
                 <input type="text" id="name" name="name" className="input-field" />
               </div>

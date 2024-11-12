@@ -3,34 +3,37 @@
   --secondary: #C254DE; 
 }
 
-.pricing-card-container {
-  padding: 1rem; /* p-4 */
+.pricing-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+  align-items: center;
   width: 100%;
-  max-width: 25%; /* xl:w-1/4 */
-  flex-basis: 48%; 
+  gap: 20px;
 }
 
 .pricing-card {
+  flex: 1 1 300px;
+  max-width: 300px; 
   height: 100%;
-  padding: 1.5rem; /* p-6 */
-  border: 4px solid #C64FEC; /* border-primary */
-  border-radius: 0.375rem; /* rounded-lg */
+  padding: 1rem;
+  border: 4px solid #C64FEC;
+  border-radius: 0.375rem;
   display: flex;
   flex-direction: column;
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
-  border-radius: 0.375rem; /* Optional: Customize border radius as needed */
   box-shadow: 0 0 8px rgba(194, 84, 222, 0.6);
-  
 }
 
+
 .pricing-card:hover {
-  transform: scale(1.05); /* hover:scale-105 */
+  transform: scale(1.05);
 
 } 
 
-/* Title of the plan */
+
 .plan-title {
 
   font-size: 0.875rem; 
@@ -40,14 +43,14 @@
   font-weight: 500; 
 }
 
-/* Price styling */
+
 .price {
   font-size: 3rem;
   font: medium;
   color: #C64FEC; 
   margin-bottom: 1rem; 
   border-bottom: 1px solid white; 
-  padding-bottom: 1rem; /* padding-bottom */
+  padding-bottom: 1rem; 
 }
 
 .price-duration {
@@ -58,7 +61,7 @@
 
 }
 
-/* Feature list */
+
 .feature-item {
   display: flex;
   align-items: center;
@@ -70,8 +73,8 @@
 
 .feature-icon {
   display: inline-flex;
-  width: 1rem; 
-  height: 1rem; 
+  width: 0.95rem; 
+  height: 0.95rem; 
   border-radius: 50%; 
   margin-right: 0.5rem;
   align-items: center;
@@ -82,8 +85,8 @@
 }
 
 .icon {
-  width: 0.75rem; 
-  height: 0.75rem; 
+  width: 0.55rem; 
+  height: 0.55rem; 
   color:white;
 }
 
@@ -103,21 +106,21 @@
   padding-right: 1rem; 
   width: 100%;
   outline: none; 
-  border-radius: 0.375rem; 
+  border-radius: 0.4rem; 
 }
 
 .join-button:hover {
-  background-color: #C254DE; /* hover:bg-secondary */
+  background-color: #C254DE;
 }
 
 @media (min-width: 768px) {
   .pricing-card-container {
-    width: 50%; /* md:w-1/2 corresponds to width: 50% on medium screens (>= 768px) */
+    width: 50%; 
   }
 }
 
 @media (min-width: 1280px) {
   .pricing-card-container {
-    width: 25%; /* xl:w-1/4 corresponds to width: 25% on extra-large screens (>= 1280px) */
+    width: 25%;
   }
 }

@@ -18,13 +18,13 @@ const Footer = () => {
           <p className="footer-copyright">
             © 2024 Evolve <span className="footer-highlight">Fit</span>
           </p>
-          <span className="footer-social-links">
+          <span className="social-links">
             <a
               href="https://www.facebook.com/share/91NKfwYSFLSKCXBX/?mibextid=qi2Omg"
               target="_blank"
               rel="noopener noreferrer"
-            >
-              <FaFacebook className="social-icon" />
+            > 
+            <FaFacebook className="icon1" />
             </a>
             <a
               className="social-icon-spacing"
@@ -32,7 +32,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaSquareXTwitter className="social-icon" />
+            <FaSquareXTwitter className="icon2" />
             </a>
             <a
               className="social-icon-spacing"
@@ -40,7 +40,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagramSquare className="social-icon" />
+            <FaInstagramSquare className="icon3" />
             </a>
             <a
               className="social-icon-spacing"
@@ -48,9 +48,9 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin className="social-icon" />
+            <FaLinkedin className="icon4" />
             </a>
-          </span>
+            </span> 
         </div>
       </footer>
     </div>

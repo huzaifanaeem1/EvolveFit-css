@@ -1,4 +1,3 @@
-/* Hero section background styling */
 .hero-section {
   background-size: cover;
   background-position: center;
@@ -8,7 +7,6 @@
   font-family: Arial, sans-serif;
 }
 
-/* Hero container styling */
 .hero-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -25,7 +23,6 @@
   }
 }
 
-/* Hero content styling */
 .hero-content {
   flex-grow: 1;
   max-width: 50%;
@@ -41,7 +38,6 @@
   }
 }
 
-/* Title styling */
 .hero-title {
   font-size: 48px;
   font-weight: bold;
@@ -54,24 +50,24 @@
 }
 
 .hero-highlight {
-  color: #c64fec; /* Replace with your secondary color */
+  color: #c64fec; 
 }
 
-/* Description styling */
+
 .hero-description {
   font-weight: 500;
   margin-top: 16px;
   line-height: 1.6;
 }
 
-/* Button styling */
 .hero-button-link {
   margin-left: 16px;
 }
 
 .hero-button {
+  align-items: center;
   margin-top: 16px;
-  background-color: #c64fec; /* Primary color */
+  background-color: #c64fec; 
   padding: 10px 20px;
   border: none;
   cursor: pointer;
@@ -81,5 +77,5 @@
 }
 
 .hero-button:hover {
-  background-color: #ff4e64; /* Secondary color */
+  background-color: #C254DE; 
 }

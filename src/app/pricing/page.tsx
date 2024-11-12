@@ -1,6 +1,6 @@
 import React from "react";
 import { Pricing } from "@/components";
-import "../../styles/pricing/Pricing.page.css"
+import "../../styles/pricing/page.css"
 
 const page = () => {
   return (

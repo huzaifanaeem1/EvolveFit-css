@@ -1,6 +1,6 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa";
-import "../../styles/pricing/PricingCard.css"
+import "../../styles/pricing/PricingCard.css";
 type Plan = {
   id: number;
   title: string;
@@ -17,7 +17,7 @@ const PricingCard = ({
   plan: Plan;
 }) => {
   return (
-    <div className="pricing-card-container">
+    <div className="">
       <div className="pricing-card">
         <h2 className="plan-title">{plan.title}</h2>
         <h1 className="price">
@@ -27,7 +27,7 @@ const PricingCard = ({
           </span>
         </h1>
         {plan.features.map((feature) => (
-          <p key={feature} className="feature-item">
+          <p key={feature} className="feature-item"> 
             <span className="feature-icon">
               <FaCheck className="icon" />
             </span>

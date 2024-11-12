@@ -2,7 +2,8 @@
 import { SectionTitle } from "@/components";
 import React, { useState } from "react";
 import PricingCard from "./PricingCard";
-import "../../styles/pricing/Pricing.css"
+import "../../styles/pricing/Pricing.css";
+import "@/styles/pricing/PricingCard.css";
 const plans = [
   {
     id: 1,
@@ -59,20 +60,24 @@ const Pricing = () => {
         <div className="pricing-header">
           <SectionTitle first="Pricing" second="Plans" />
           <p className="pricing-description">
-            Whether you’re looking for flexibility or the best value, we have options for you. Choose between monthly or annual plans and take the first step towards achieving your fitness goals.
+            Whether you’re looking for flexibility or the best value, we have
+            options for you. Choose between monthly or annual plans and take the
+            first step towards achieving your fitness goals.
           </p>
           <div className="billing-cycle-selector">
             {["Monthly", "Annually"].map((cycle) => (
               <button
                 key={cycle}
-                className={`billing-cycle-btn ${billingCycle === cycle ? "active" : ""}`}
+                className={`billing-cycle-btn ${
+                  billingCycle === cycle ? "active" : ""
+                }`}
                 onClick={() => setBillingCycle(cycle)}
               >
                 {cycle}
               </button>
             ))}
           </div>
-        </div>
+        </div> 
 
         <div className="pricing-cards-container">
           {plans.map((plan) => (

@@ -10,13 +10,13 @@ const About = () => {
           alt="hero"
           src="/images/about.jpg"
           width={520}
-          height={460}
+          height={350}
         />
       </div>
       <div className="text-container">
         <h1 className="about-title">
           Why
-          <span className="highlight"> Choose Us?</span>
+          <span className="light"> Choose Us?</span>
         </h1>
         <p className="about-description">
           Personalized Training: Tailored fitness plans to meet your unique goals and needs.

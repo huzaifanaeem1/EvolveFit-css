@@ -1,6 +1,6 @@
 :root {
-  --primary: #C64FEC; /* Primary color */
-  --secondary: #C254DE; /* Secondary color */
+  --primary: #C64FEC; 
+  --secondary: #C254DE; 
 }
 
 .trainer-card {
@@ -18,8 +18,6 @@
 
 
 .trainer-image {
-  width: 200;
-  height: 200;
   flex-shrink: 0;
   border-radius: 0.5rem;
   object-fit: cover;
@@ -31,28 +29,43 @@
 }
 
 .trainer-text {
-  flex-grow: 1;
+  flex-grow: 2;
 }
 
 .trainer-name {
+  padding-bottom: 0.5rem;
   font-size: 1.125rem;
   font-weight: 500;
 }
 
 .trainer-description {
   margin-bottom: 1rem;
+  line-height: 1.5;
 }
 
 .social-icons {
   display: inline-flex;
 }
-
-.social-icon {
+.social-icon1 {
   width: 1.5rem;
   height: 1.5rem; 
   transition: transform 0.4s ease, color 0.4s ease;
   display: inline-flex;
-  margin-right: 2rem;
+  margin-right: 0.5rem;
+}
+.social-icon2 {
+  width: 1.5rem;
+  height: 1.5rem; 
+  transition: transform 0.4s ease, color 0.4s ease;
+  display: inline-flex;
+  margin-right: 0.5rem;
+}
+.social-icon3 {
+  width: 1.5rem;
+  height: 1.5rem; 
+  transition: transform 0.4s ease, color 0.4s ease;
+  display: inline-flex;
+  margin-right: 0.5rem;
 }
 
 .social-icon:last-child {
@@ -78,14 +91,14 @@
   }
 }
 
-@media (min-width: 640px) { /* sm breakpoint (640px and up) */
+@media (min-width: 640px) { 
   .trainer-image {
-    margin-bottom: 0; /* sm:mb-0 removes margin-bottom at sm breakpoint */
+    margin-bottom: 0; 
   }
 }
 
-@media (min-width: 640px) { /* sm breakpoint (640px and up) */
+@media (min-width: 640px) { 
   .trainer-text {
-    padding-left: 2rem; /* sm:pl-8 adds padding-left of 2rem (8 * 0.25rem = 2rem) */
+    padding-left: 2rem; 
   }
 }

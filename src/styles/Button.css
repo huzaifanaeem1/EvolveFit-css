@@ -12,8 +12,8 @@
   font-size: 1.125rem;
   transition: background-color 0.2s ease;
   border-radius: 0.5rem; 
+  border: 2px solid #C64FEC;
 }
-
 .button:hover {
   background-color: #C64FEC;
 }
